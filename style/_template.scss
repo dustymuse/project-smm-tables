@@ -1,0 +1,248 @@
+.section-title {
+    font-family: $font;
+    font-size: 38px;
+    font-weight: 900;
+    color: $light_secondary;
+
+    @media (max-width:$l) {
+        font-size: 28px;
+    }
+}
+
+.basic-section-text {
+    font-family: $font;
+    font-size: 20px;
+    color: $light_secondary;
+
+    @media (max-width:$m) {
+        font-size: 16px;
+    }
+
+    @media (max-width:$s) {
+        font-size: 18px;
+    }
+}
+
+.section {
+    padding: 80px 0;
+    line-height: 1.4;
+
+    @media (max-width: $l) {
+        padding: 40px 0 60px;
+    }
+
+    @media (max-width:$m) {
+        padding: 40px 0;
+    }
+
+    .section__title {
+        margin-bottom: 24px;
+        text-align: center;
+
+
+        @media (max-width: $m) {
+            margin-bottom: 16px;
+        }
+    }
+
+    .section__text {
+        margin-bottom: 60px;
+        text-align: center;
+
+        @media (max-width: $l) {
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: $m) {
+            margin-bottom: 32px;
+        }
+    }
+
+    .section__table {
+
+        @media (max-width:$s) {
+            display: none;
+        }
+    }
+
+    .section__table_mobile {
+        display: none;
+
+        @media (max-width:$s) {
+            display: table;
+        }
+    }
+
+}
+
+.table_columns_equal {
+    width: 100%;
+    table-layout: fixed;
+}
+
+
+
+.table {
+    width: 100%;
+    font-family: $font;
+    font-size: 20px;
+    color: $light_secondary;
+
+    //some dark magic
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 12px;
+    border: 1px solid $dark_secondary;
+    overflow: hidden;
+
+    .table__cell:not(:last-of-type) {
+        border-right: 1px solid $dark_secondary;
+    }
+
+    .table__row:not(:last-of-type) .table__cell:not(.table__cell_col-end) {
+        border-bottom: 1px solid $dark_secondary;
+    }
+
+    .table__row_style_light:not(:last-of-type) .table__cell,
+    .table__row_style_dark:not(:last-of-type) .table__cell {
+        border-bottom: 1px solid $dark_secondary;
+    }
+
+    .table__cell_forced-border {
+        border-right: 1px solid $dark_secondary;
+    }
+
+    @media (max-width:$l) {
+        font-size: 16px;
+    }
+
+    @media (max-width:$m) {
+        font-size: 12px;
+    }
+
+    .table__cell {
+        vertical-align: top;
+        padding: 20px;
+    }
+
+    .table__cell_head {
+        text-align: left;
+        font-weight: 700;
+    }
+
+    .table__row:nth-of-type(2n+1),
+    .table__row_style_light {
+        background-color: $dark_basic;
+    }
+
+    .table__row:nth-of-type(2n),
+    .table__row_style_dark {
+        background-color: $lightgrey_basic;
+    }
+
+    .table__list {
+        padding-left: 18px;
+
+        @media (max-width:$l) {
+            padding-left: 12px;
+        }
+    }
+
+    .table__list-item {
+        margin-bottom: 8px;
+
+        @media (max-width:$s) {
+            margin-bottom: 4px;
+        }
+    }
+
+    .table__list-item::marker {
+        color: $bright_basic;
+    }
+
+
+    .table__cell-text {
+        margin: 8px 0;
+    }
+
+    .table__price {
+        font-weight: 700;
+    }
+
+}
+
+.table_section_advertising-goals {
+    .table__flex-wrapper {
+        min-height: 68px;
+        display: flex;
+        align-items: center;
+
+        @media (max-width:$l) {
+            min-height: 60px;
+        }
+
+        @media (max-width:$m) {
+            min-height: 52px;
+        }
+
+        @media (max-width:$s) {
+            min-height: 48px;
+        }
+    }
+
+    .table__cell {
+        padding: 0 0 0 20px;
+    }
+
+    .table__cell-icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 16px;
+    }
+}
+
+.infoblock {
+    padding: 40px 66px 40px 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid $dark_secondary;
+
+    @media (max-width:$l) {
+        padding: 20px;
+    }
+
+    @media (max-width:$s) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .infoblock__icon {
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+
+        @media (max-width:$l) {
+            margin-right: 12px;
+        }
+
+        @media (max-width:$s) {
+            width: 24px;
+            height: 24px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .infoblock__text {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        color: $purple_basic;
+        font-family: $font;
+        font-size: 20px;
+
+        @media (max-width:$l) {
+            font-size: 16px;
+        }
+    }
+}

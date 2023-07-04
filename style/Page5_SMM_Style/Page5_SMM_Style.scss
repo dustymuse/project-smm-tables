@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;900&display=swap');
+@import '../vars';
+@import './Page5_SMM_Header-vars';
+@import '../template_header';
+@import '../template';
+
+//section communication structure
+.section_name_communication {
+    background-color: $lightgrey_basic;
+}
+
+.table_section_communication .table__cell {
+
+    @media (max-width:$l) {
+        padding: 20px 10px;
+    }
+
+    @media (max-width:$m) {
+        padding-right: 0;
+    }
+
+    @media (max-width:$s) {
+        padding: 10px 16px;
+    }
+}
+
+
+
+
+.section_name_advertising-goals {
+    background-color: $lightgrey_basic;
+
+    .section__text {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 920px;
+
+        @media (max-width:$l) {
+            max-width: none;
+        }
+    }
+}
+
+.section_name_cost-of-services {
+    background-color: $lightgrey_basic;
+
+    .section__title {
+        margin-bottom: 60px;
+
+        @media (max-width:$l) {
+            margin-bottom: 40px;
+        }
+
+        @media (max-width:$m) {
+            margin-bottom: 32px;
+        }
+    }
+}
+
+.section_name_cost-of-services .section__infoblock {
+    margin-top: 60px;
+
+    @media (max-width:$l) {
+        margin-top: 40px;
+    }
+
+    @media (max-width:$m) {
+        margin-top: 32px;
+    }
+}

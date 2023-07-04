@@ -1,0 +1,34 @@
+$font: 'Inter', Arial, sans-serif;
+
+// цвета:
+$color1: #393A56;
+$color2: #376FFF;
+$color3: #EDF4FA;
+$color4: #FFFF;
+$color5: #C1D3DE;
+
+$dark_basic: #FFFFFF;
+
+$light_basic: #8B9BAB;
+// Очень светло-серый для текста:
+$dark_secondary: #C1D3DE;
+// ярко-синий:
+$bright_basic: #376FFF;
+// фиолетовый фон:
+$purple_basic: #393A56;
+// почти белый, но серый фон:
+$lightgrey_basic: #EDF4FA;
+//тёмно-синий для текста:
+$light_secondary: #242A56;
+
+// брейкпоинты:
+$l: 1460px;
+$m: 1023px;
+$s: 767px;
+$xs: 320px;
+
+// размеры контейнеров:
+$container-xl: 1401px;
+$container-l: 944px;
+$container-m: 688px;
+$container-s: 288px;
