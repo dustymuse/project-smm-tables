@@ -4,7 +4,67 @@
 @import '../template_header';
 @import '../template';
 
+//section content plan
+
+.section_name_content-plan {
+
+    .section__table {
+
+        @media (max-width:$m) {
+            display: none;
+        }
+    }
+
+    .section__table_mobile {
+        @media (max-width:$m) {
+            display: table;
+        }
+    }
+}
+
+.table_section_content-plan {
+
+    .table__row:nth-of-type(2n),
+    .table__row_style_dark {
+        background-color: $lightgrey_basic;
+        background-image: none;
+    }
+
+    .table__cell:not(.table__cell_head) {
+        padding-top: 12px;
+    }
+
+    .table__cell {
+        @media (max-width:$l) {
+            padding-left: 10px;
+        }
+
+        @media (max-width:$m) {
+            padding: 15px 20px 20px 15px;
+        }
+    }
+
+    .table__cell-text {
+        margin: 4px 0;
+    }
+
+    .table__cell-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+
+        @media (max-width:$s) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .table__cell-grid-item:last-of-type {
+            grid-column: 1/-1;
+        }
+    }
+}
+
 //section communication structure
+
 .section_name_communication {
     background-color: $lightgrey_basic;
     background-image: url(../../assets/img/template/light-blue-bg.svg);

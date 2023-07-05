@@ -174,9 +174,6 @@
         margin: 8px 0;
     }
 
-    .table__price {
-        font-weight: 700;
-    }
 
 }
 
@@ -256,4 +253,15 @@
             font-size: 16px;
         }
     }
+}
+
+//Выделенное жирным
+.stressed {
+    font-weight: 700;
+}
+
+//Выделение синим с подчёркиванием
+.link-like {
+    color: $bright_basic;
+    text-decoration: underline;
 }
