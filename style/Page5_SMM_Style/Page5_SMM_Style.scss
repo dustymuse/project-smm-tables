@@ -24,6 +24,10 @@
 
 .table_section_content-plan {
 
+    @media (max-width:$s) {
+        border-radius: 0;
+    }
+
     .table__row:nth-of-type(2n),
     .table__row_style_dark {
         background-color: $lightgrey_basic;

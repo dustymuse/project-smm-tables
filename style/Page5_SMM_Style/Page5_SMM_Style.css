@@ -865,6 +865,11 @@ a {
   }
 }
 
+@media (max-width: 767px) {
+  .table_section_content-plan {
+    border-radius: 0;
+  }
+}
 .table_section_content-plan .table__row:nth-of-type(2n),
 .table_section_content-plan .table__row_style_dark {
   background-color: #EDF4FA;
