@@ -742,6 +742,7 @@ a {
 .table .table__row:nth-of-type(2n),
 .table .table__row_style_dark {
   background-color: #EDF4FA;
+  background-image: url(../../assets/img/template/light-blue-bg.svg);
 }
 .table .table__list {
   padding-left: 18px;
@@ -849,6 +850,7 @@ a {
 
 .section_name_communication {
   background-color: #EDF4FA;
+  background-image: url(../../assets/img/template/light-blue-bg.svg);
 }
 
 @media (max-width: 1460px) {
@@ -869,6 +871,7 @@ a {
 
 .section_name_advertising-goals {
   background-color: #EDF4FA;
+  background-image: url(../../assets/img/template/light-blue-bg.svg);
 }
 .section_name_advertising-goals .section__text {
   margin-left: auto;
@@ -883,6 +886,7 @@ a {
 
 .section_name_cost-of-services {
   background-color: #EDF4FA;
+  background-image: url(../../assets/img/template/light-blue-bg.svg);
 }
 .section_name_cost-of-services .section__title {
   margin-bottom: 60px;
